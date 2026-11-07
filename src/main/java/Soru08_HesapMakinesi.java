@@ -58,10 +58,17 @@ public class Soru08_HesapMakinesi {
                 
                 System.out.print("Bolunen sayiyi kaydettim, bolen sayiyi da soyler misin: ");
                 sayi2 = girdi.nextInt();
-                
-                sonuc = sayi1 / sayi2;
-                System.out.println("Yaptigin bolme isleminin sonucu: " + sonuc);
-                
+
+                if (sayi2 != 0) {
+                    
+                    sonuc = sayi1 / sayi2;
+                    System.out.println("Yaptigin bolme isleminin sonucu: " + sonuc); 
+                    
+                } else {
+                    
+                    System.out.println("Bu islem yapilamaz.");
+                }
+
                 break;
                 
             default:
